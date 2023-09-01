@@ -111,14 +111,14 @@ INSERT INTO "picture" ("name", "site_id") VALUES
 ('memory--image-2', 3),
 ('memory--image-3', 3),
 ('ezee--image-1', 4),
-('ezee--image-1', 4),
-('ezee--image-1', 4),
+('ezee--image-2', 4),
+('ezee--image-3', 4),
 ('fran--image-1', 5),
-('fran--image-1', 5),
-('fran--image-1', 5),
+('fran--image-2', 5),
+('fran--image-3', 5),
 ('top_5_video_games--image-1', 6),
-('top_5_video_games--image-1', 6),
-('top_5_video_games--image-1', 6);
+('top_5_video_games--image-2', 6),
+('top_5_video_games--image-3', 6);
 
 -- Déchargement des données de la table "techno"
 --
