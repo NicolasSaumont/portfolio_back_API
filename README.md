@@ -111,7 +111,7 @@ Please visit https://www.portfolio.nicolassaumont.com or click on [this link](ht
 ### Execution
 
 - Navigate to the project's root directory.
-- Run the application using: `npm start`
+- Run the application using: `npm run start`
 - Open a browser and go to `http://localhost:3000` to access the app.
 
 
@@ -123,12 +123,15 @@ Please visit https://www.portfolio.nicolassaumont.com or click on [this link](ht
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Project set up
 - [x] Database set up
 - [ ] Database seeding
 - [ ] Homepage
 - [ ] List of sites
 - [ ] Site's détails
+- [ ] Back office
+  - [ ] Create new website
+  - [ ] Edit website
+  - [ ] Delete website
   
 
 See the [open issues](https://github.com/NicolasSaumont/portfolio_back_API/issues) for a full list of proposed features (and known issues).
