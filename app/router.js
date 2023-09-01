@@ -12,4 +12,9 @@ router.get('/', (req, res) => {
 router.get('/sites', siteController.getAllSites);
 router.get('/sites/:id', siteController.getOneSite);
 
+// Back office
+router.post('/sites', siteController.createSite);
+router.patch('/sites', siteController.editSite);
+router.delete('/sites', siteController.deleteSite);
+
 module.exports = router;

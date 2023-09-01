@@ -111,7 +111,7 @@ Please visit https://www.portfolio.nicolassaumont.com or click on [this link](ht
 ### Execution
 
 - Navigate to the project's root directory.
-- Run the application using: `npm run start`
+- Run the application using: `npm start`
 - Open a browser and go to `http://localhost:3000` to access the app.
 
 

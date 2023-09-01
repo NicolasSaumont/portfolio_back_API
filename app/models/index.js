@@ -25,7 +25,7 @@ Picture.belongsTo(Site, {
 
 // A site can have many Picture
 Site.hasMany(Picture, {
-    as: 'picturesOfSite',
+    as: 'picturesFromSite',
     foreignKey: 'site_id'
 });
 

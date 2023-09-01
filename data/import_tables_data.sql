@@ -79,7 +79,7 @@ INSERT INTO "state" ("name") VALUES
 -- Déchargement des données de la table "site"
 --
 
-INSERT INTO "site" ("name", "description", "site_link", "github_link", "state_id") VALUES
+INSERT INTO "site" ("name", "description", "site_link", "github_link", "top_site", "state_id") VALUES
 ('CV Adventure', 'Discover my career path in a playful way thanks to this innovative CV site: a retro arcade game experience that lets you navigate through the different stages of my career while having fun.
 
 Immerse yourself in this unique experience of discovering a web developer in search of opportunities, while exploring my background and skills.', 'https://www.cv-adventure.nicolassaumont.com/', 'https://github.com/NicolasSaumont/cv_adventure', 'true', 3),
