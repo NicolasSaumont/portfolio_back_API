@@ -91,7 +91,6 @@ This website is the portfolio of Nicolas Saumont, showing his skills and accompl
 * [![Node][Node.js]][Node-url]
 * [![Express][Express.js]][Express-url]
 * [![Sequelize][Sequelize.js]][Sequelize-url]
-* [![Vite][Vite.js]][Vite-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -204,8 +203,6 @@ Project Link: [https://github.com/NicolasSaumont/portfolio_back_API](https://git
 [product-screenshot]: ./assets/img/screenshot.png
 [Node.js]: https://img.shields.io/badge/node.js-f41a36?style=for-the-badge&logo=Node.js&logoColor=white
 [Node-url]: https://nodejs.org/fr
-[Vite.js]: https://img.shields.io/badge/vite-21af90?style=for-the-badge&logo=vite
-[Vite-url]: https://vitejs.dev/
 [Sequelize.js]: https://img.shields.io/badge/sequelize-yellow?style=for-the-badge&logo=sequelize
 [Sequelize-url]: https://sequelize.org/
 [Express.js]: https://img.shields.io/badge/express.js-35495E?style=for-the-badge&logo=express&logoColor=4FC08D
