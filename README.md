@@ -43,7 +43,7 @@
   </p>
 </div>
 
-Warning : This repo is about the backend application. If you want to access the frontend project, please [click here](https://github.com/NicolasSaumont/portfolio_front).
+
 
 
 <!-- TABLE OF CONTENTS -->
@@ -80,6 +80,8 @@ Warning : This repo is about the backend application. If you want to access the 
 
 This website is the portfolio of Nicolas Saumont, showing his skills and accomplishments. It creatively and visually presents his work in web development and interface design, demonstrating his expertise and style through various projects and experiences.
 
+*Warning : This repo is about the backend application. If you want to access the frontend project, please [click here](https://github.com/NicolasSaumont/portfolio_front).*
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -88,7 +90,8 @@ This website is the portfolio of Nicolas Saumont, showing his skills and accompl
 
 * [![Node][Node.js]][Node-url]
 * [![Express][Express.js]][Express-url]
-* [![EJS][EJS.js]][EJS-url]
+* [![Sequelize][Sequelize.js]][Sequelize-url]
+* [![Vite][Vite.js]][Vite-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -110,7 +113,7 @@ Please visit https://www.portfolio.nicolassaumont.com or click on [this link](ht
 
 - Navigate to the project's root directory.
 - Run the application using: `npm start`
-- Open a browser and go to `http://localhost:3000` to access the game.
+- Open a browser and go to `http://localhost:3000` to access the app.
 
 
 
@@ -201,7 +204,9 @@ Project Link: [https://github.com/NicolasSaumont/portfolio_back_API](https://git
 [product-screenshot]: ./assets/img/screenshot.png
 [Node.js]: https://img.shields.io/badge/node.js-f41a36?style=for-the-badge&logo=Node.js&logoColor=white
 [Node-url]: https://nodejs.org/fr
-[EJS.js]: https://img.shields.io/badge/ejs.js-000000?style=for-the-badge&logo=ejs&logoColor=white
-[EJS-url]: https://ejs.co/
+[Vite.js]: https://img.shields.io/badge/vite-21af90?style=for-the-badge&logo=vite
+[Vite-url]: https://vitejs.dev/
+[Sequelize.js]: https://img.shields.io/badge/sequelize-yellow?style=for-the-badge&logo=sequelize
+[Sequelize-url]: https://sequelize.org/
 [Express.js]: https://img.shields.io/badge/express.js-35495E?style=for-the-badge&logo=express&logoColor=4FC08D
 [Express-url]: https://expressjs.com/
