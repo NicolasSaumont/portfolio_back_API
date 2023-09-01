@@ -18,7 +18,7 @@ const siteController = {
 
         });
 
-        return res.json(lists);
+        return res.json(sites);
 
         } catch (error) {
 
