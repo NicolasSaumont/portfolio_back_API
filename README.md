@@ -1,7 +1,7 @@
 
 ###### Readme Top 
 <!--
-*** Thanks for checking out the project 'Nicolas Saumont's Portfolio'. If you have a suggestion
+*** Thanks for checking out the project 'Nicolas Saumont's Portfolio | Backend - API'. If you have a suggestion
 *** that would make this better, please fork the repo and create a pull request
 *** or simply open an issue with the tag "enhancement".
 *** Don't forget to give the project a star!
@@ -23,26 +23,27 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/NicolasSaumont/portfolio">
-    <img src="public/favicon.ico" alt="Logo" width="80" height="80">
+  <a href="https://github.com/NicolasSaumont/portfolio_back_API">
+    <img src="./assets/img/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Nicolas Saumont's Portfolio</h3>
+<h3 align="center">Nicolas Saumont's Portfolio | Backend - API</h3>
 
   <p align="center">
     Have a clear overview of all my projects !
     <br />
-    <a href="https://github.com/NicolasSaumont/portfolio"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/NicolasSaumont/portfolio_back_API"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/NicolasSaumont/portfolio">View Demo</a>
+    <a href="https://github.com/NicolasSaumont/portfolio_back_API">View Demo</a>
     ·
-    <a href="https://github.com/NicolasSaumont/portfolio/issues">Report Bug</a>
+    <a href="https://github.com/NicolasSaumont/portfolio_back_API/issues">Report Bug</a>
     ·
-    <a href="https://github.com/NicolasSaumont/portfolio/pulls">Request Feature</a>
+    <a href="https://github.com/NicolasSaumont/portfolio_back_API/pulls">Request Feature</a>
   </p>
 </div>
 
+Warning : This repo is about the backend application. If you want to access the frontend project, please [click here](https://github.com/NicolasSaumont/portfolio_front).
 
 
 <!-- TABLE OF CONTENTS -->
@@ -122,10 +123,13 @@ Please visit https://www.portfolio.nicolassaumont.com or click on [this link](ht
 
 - [x] Project set up
 - [x] Database set up
-- [x] Database seeding
+- [ ] Database seeding
+- [ ] Homepage
+- [ ] List of sites
+- [ ] Site's détails
   
 
-See the [open issues](https://github.com/NicolasSaumont/portfolio/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/NicolasSaumont/portfolio_back_API/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -163,7 +167,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Nicolas Saumont - [@NicolasSaumont](https://twitter.com/NicolasSaumont) - saumont.nicolas@gmail.com
 
-Project Link: [https://github.com/NicolasSaumont/portfolio](https://github.com/NicolasSaumont/portfolio)
+Project Link: [https://github.com/NicolasSaumont/portfolio_back_API](https://github.com/NicolasSaumont/portfolio_back_API)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -182,19 +186,19 @@ Project Link: [https://github.com/NicolasSaumont/portfolio](https://github.com/N
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/NicolasSaumont/portfolio.svg?style=for-the-badge
-[contributors-url]: https://github.com/NicolasSaumont/portfolio/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/NicolasSaumont/portfolio.svg?style=for-the-badge
-[forks-url]: https://github.com/NicolasSaumont/portfolio/network/members
-[stars-shield]: https://img.shields.io/github/stars/NicolasSaumont/portfolio.svg?style=for-the-badge
-[stars-url]: https://github.com/NicolasSaumont/portfolio/stargazers
-[issues-shield]: https://img.shields.io/github/issues/NicolasSaumont/portfolio.svg?style=for-the-badge
-[issues-url]: https://github.com/NicolasSaumont/portfolio/issues
-[license-shield]: https://img.shields.io/github/license/NicolasSaumont/portfolio.svg?style=for-the-badge
-[license-url]: https://github.com/NicolasSaumont/portfolio/blob/main/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/NicolasSaumont/portfolio_back_API.svg?style=for-the-badge
+[contributors-url]: https://github.com/NicolasSaumont/portfolio_back_API/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/NicolasSaumont/portfolio_back_API.svg?style=for-the-badge
+[forks-url]: https://github.com/NicolasSaumont/portfolio_back_API/network/members
+[stars-shield]: https://img.shields.io/github/stars/NicolasSaumont/portfolio_back_API.svg?style=for-the-badge
+[stars-url]: https://github.com/NicolasSaumont/portfolio_back_API/stargazers
+[issues-shield]: https://img.shields.io/github/issues/NicolasSaumont/portfolio_back_API.svg?style=for-the-badge
+[issues-url]: https://github.com/NicolasSaumont/portfolio_back_API/issues
+[license-shield]: https://img.shields.io/github/license/NicolasSaumont/portfolio_back_API.svg?style=for-the-badge
+[license-url]: https://github.com/NicolasSaumont/portfolio_back_API/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/nicolas-saumont
-[product-screenshot]: public/img/screenshot.png
+[product-screenshot]: ./assets/img/screenshot.png
 [Node.js]: https://img.shields.io/badge/node.js-f41a36?style=for-the-badge&logo=Node.js&logoColor=white
 [Node-url]: https://nodejs.org/fr
 [EJS.js]: https://img.shields.io/badge/ejs.js-000000?style=for-the-badge&logo=ejs&logoColor=white
