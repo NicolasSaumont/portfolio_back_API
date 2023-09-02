@@ -53,33 +53,46 @@ const siteController = {
         }
     },
 
-    async createSite (req, res) {
-        // try {
+    async createNewSite (req, res) {
+        try {
 
-        // if (!req.body.name) {
-        //     return res.status(400).json({ message: "Missing body parameter : name" });
-        // }
-        // if (typeof req.body.name !== 'string') {
-        //     return res.status(400).json({ message: "Invalid type: name should be a string" });
-        // }
-        // if (typeof req.body.position !== undefined && isNaN(req.body.position)) { // Si position existe ET qu'il n'est pas de type number
-        //     return res.status(400).json({ message: "Invalid type: position should be a number" });
-        // }
+        if (!req.body.name) {
+            return res.status(400).json({ message: "Missing body parameter : name" });
+        }
+        if (typeof req.body.name !== 'string') {
+            return res.status(400).json({ message: "Invalid type: name should be a string" });
+        }
 
-        // // 2. Création la ressouce
-        // // Une fois toutes les verifs passées, on peut créer notre nouvelle liste
-        // const newList = await List.create({
-        //     name: req.body.name,
-        //     position: req.body.position
-        // });
+        if (!req.body.description) {
+            return res.status(400).json({ message: "Missing body parameter : description" });
+        }
+        if (typeof req.body.description !== 'string') {
+            return res.status(400).json({ message: "Invalid type: description should be a string" });
+        }
 
-        // // 3. On répond au client
-        // // On donne le code HTTP 201 Created et on retourne la nouvelle liste en JSON
-        // return res.status(201).json(newList);
-        // } catch (error) {
-        // console.trace(error);
-        // res.status(500).json({ message: error.message });
-        // }
+        let siteLink = req.body.site_link;
+        if (req.body.site_link === undefined) {
+            siteLink = '';
+        }
+
+        let githubLink = req.body.github_link;
+        if (req.body.github_link === undefined) {
+            githubLink = '';
+        } 
+
+        const newSite = await Site.create({
+            name: req.body.name,
+            description: req.body.description,
+            site_link: siteLink,
+            github_link: githubLink,
+        });
+
+        return res.status(201).json(newSite);
+
+        } catch (error) {
+            console.trace(error);
+            res.status(500).json({ message: error.message });
+        }
     },
 
 }

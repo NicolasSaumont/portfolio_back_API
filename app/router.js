@@ -18,7 +18,7 @@ router.get('/sites/:id', siteController.getOneSite);
 // router.patch('/admin/profile', mainController.editProfile)
 
 // router.get('/admin/site', siteController.newSite);
-// router.post('/admin/site', siteController.createNewSite);
+router.post('/admin/site', siteController.createNewSite);
 // router.get('/admin/site/:id', siteController.showSiteDetails);
 // router.patch('/admin/site/:id', siteController.editSite);
 // router.delete('/admin/site/:id', siteController.deleteSite);
