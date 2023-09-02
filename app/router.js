@@ -13,8 +13,9 @@ router.get('/sites', siteController.getAllSites);
 router.get('/sites/:id', siteController.getOneSite);
 
 // Back office
-// router.post('/sites', siteController.createSite);
-// router.patch('/sites', siteController.editSite);
-// router.delete('/sites', siteController.deleteSite);
+// router.post('/admin', siteController.getAllSites);
+// router.post('/admin/site', siteController.createSite);
+// router.patch('/admin/site/:id', siteController.editSite);
+// router.delete('/admin/site/:id', siteController.deleteSite);
 
 module.exports = router;

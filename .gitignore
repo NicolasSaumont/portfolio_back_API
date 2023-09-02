@@ -1,3 +1,4 @@
 node_modules/
 .env
 graphics_elements/
+data/import_tables_data.sql

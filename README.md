@@ -124,10 +124,10 @@ Please visit https://www.portfolio.nicolassaumont.com or click on [this link](ht
 ## Roadmap
 
 - [x] Database set up
-- [ ] Database seeding
-- [ ] Homepage
-- [ ] List of sites
-- [ ] Site's détails
+- [x] Database seeding
+- [x] Main
+  - [x] Show all sites
+  - [x] Show one site 
 - [ ] Back office
   - [ ] Create new website
   - [ ] Edit website
