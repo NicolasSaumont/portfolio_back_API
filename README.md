@@ -132,6 +132,9 @@ Please visit https://www.portfolio.nicolassaumont.com or click on [this link](ht
   - [ ] Create new website
   - [ ] Edit website
   - [ ] Delete website
+  - [ ] Connect as admin
+  - [ ] Show profile
+  - [ ] Edit profile
   
 
 See the [open issues](https://github.com/NicolasSaumont/portfolio_back_API/issues) for a full list of proposed features (and known issues).
