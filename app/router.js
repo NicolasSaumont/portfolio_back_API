@@ -12,7 +12,7 @@ router.get('/sites', siteController.getAllSites);
 router.get('/sites/:id', siteController.getOneSite);
 
 // Back office
-// router.get('/admin', mainController.adminPage);
+router.get('/admin', mainController.adminPage);
 // router.get('/admin/profile', mainController.getProfile)
 // router.patch('/admin/profile', mainController.editProfile)
 
