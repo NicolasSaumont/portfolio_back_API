@@ -1,12 +1,11 @@
 const { Router } = require('express');
 const router = Router();
 
+const mainController = require('./controller/mainController');
 const siteController = require('./controller/siteController');
 
 // Homepage
-router.get('/', (req, res) => {
-    res.send("Hello from Nicolas Saumont's Portfolio API");
-});
+router.get('/', mainController.homepage);
 
 // Sites
 router.get('/sites', siteController.getAllSites);

@@ -129,7 +129,7 @@ Please visit https://www.portfolio.nicolassaumont.com or click on [this link](ht
   - [x] Show all sites
   - [x] Show one site 
 - [ ] Back office
-  - [ ] Create new website
+  - [x] Create new website
   - [ ] Edit website
   - [ ] Delete website
   - [ ] Connect as admin
