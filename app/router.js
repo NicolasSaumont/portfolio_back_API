@@ -20,7 +20,7 @@ router.get('/admin', mainController.adminPage);
 router.post('/admin/sites', siteController.createNewSite);
 router.get('/admin/sites/:id', siteController.getOneSite);
 router.patch('/admin/sites/:id', siteController.editSite);
-// router.delete('/admin/sites/:id', siteController.deleteSite);
+router.delete('/admin/sites/:id', siteController.deleteSite);
 
 
 module.exports = router;

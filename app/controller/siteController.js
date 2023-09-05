@@ -138,6 +138,29 @@ const siteController = {
         }
     },
 
+    async deleteSite (req, res) {
+    try {
+
+        const siteId = parseInt(req.params.id, 10);
+
+        const affectedRows = await Site.destroy({
+            where: {
+            id: siteId
+            }
+        });
+
+        if (affectedRows === 0) {
+            return res.status(404).json({ message: "Site not found. Please verify the provided id" });
+        }
+
+        return res.sendStatus(204);
+
+        } catch (error) {
+            console.trace(error);
+            res.status(500).json({ message: error.message });
+        }
+    },
+
 }
 
 module.exports = siteController;
