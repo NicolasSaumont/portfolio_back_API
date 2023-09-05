@@ -56,38 +56,81 @@ const siteController = {
     async createNewSite (req, res) {
         try {
 
-        if (!req.body.name) {
-            return res.status(400).json({ message: "Missing body parameter : name" });
-        }
-        if (typeof req.body.name !== 'string') {
-            return res.status(400).json({ message: "Invalid type: name should be a string" });
-        }
+            if (!req.body.name) {
+                return res.status(400).json({ message: "Missing body parameter : name" });
+            }
+            if (typeof req.body.name !== 'string') {
+                return res.status(400).json({ message: "Invalid type: name should be a string" });
+            }
 
-        if (!req.body.description) {
-            return res.status(400).json({ message: "Missing body parameter : description" });
-        }
-        if (typeof req.body.description !== 'string') {
-            return res.status(400).json({ message: "Invalid type: description should be a string" });
-        }
+            if (!req.body.description) {
+                return res.status(400).json({ message: "Missing body parameter : description" });
+            }
+            if (typeof req.body.description !== 'string') {
+                return res.status(400).json({ message: "Invalid type: description should be a string" });
+            }
 
-        let siteLink = req.body.site_link;
-        if (req.body.site_link === undefined) {
-            siteLink = '';
+            let siteLink = req.body.site_link;
+            if (req.body.site_link === undefined) {
+                siteLink = '';
+            }
+
+            let githubLink = req.body.github_link;
+            if (req.body.github_link === undefined) {
+                githubLink = '';
+            } 
+
+            const newSite = await Site.create({
+                name: req.body.name,
+                description: req.body.description,
+                site_link: siteLink,
+                github_link: githubLink,
+                top_site: req.body.top_site,
+                state_id: req.body.state_id,
+            });
+
+            return res.status(201).json(newSite);
+
+        } catch (error) {
+            console.trace(error);
+            res.status(500).json({ message: error.message });
         }
+    },
 
-        let githubLink = req.body.github_link;
-        if (req.body.github_link === undefined) {
-            githubLink = '';
-        } 
+    async editSite (req, res) {
+        try {
 
-        const newSite = await Site.create({
-            name: req.body.name,
-            description: req.body.description,
-            site_link: siteLink,
-            github_link: githubLink,
+        const siteId = parseInt(req.params.id, 10);
+        const foundSite = await Site.findByPk(siteId, {
+            include: [
+                {association: "picturesFromSite"},
+                {association: "technosFromSite"},
+                {association: "stateOfSite"},
+            ]
         });
 
-        return res.status(201).json(newSite);
+        if (!foundSite) {
+            return res.status(404).json({ message: "Site not found. Please verify the provided id" });
+        }
+
+        if (typeof(req.body.name) !== "undefined" && typeof(req.body.name) !== "string"){
+            return res.status(400).json({ message: "Invalid body parameter 'name'. Should provide a string." });
+        }
+        
+        if (typeof(req.body.description) !== "undefined" && typeof(req.body.description) !== "string"){
+            return res.status(400).json({ message: "Invalid body parameter 'description'. Should provide a string." });
+        }
+
+        const updateSite = await foundSite.update({
+            name: req.body.name,
+            description: req.body.description,
+            site_link: req.body.site_link,
+            github_link: req.body.github_link,
+            top_site: req.body.top_site,
+            state_id: req.body.state_id,
+        });
+
+        return res.json(updateSite);
 
         } catch (error) {
             console.trace(error);
