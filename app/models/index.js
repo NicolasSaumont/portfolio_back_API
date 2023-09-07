@@ -2,6 +2,7 @@ const Picture = require('./Picture');
 const Site = require('./Site');
 const State = require('./State');
 const Techno = require('./Techno');
+const User = require('./User');
 
 //** Association Site - State **//
 // A Site has one State
@@ -54,5 +55,6 @@ module.exports = {
   Picture,
   Site,
   State,
-  Techno
+  Techno,
+  User
 };
