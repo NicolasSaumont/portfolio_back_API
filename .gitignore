@@ -1,5 +1,4 @@
 node_modules/
 .env
-graphics_elements/
-data/
+data/import_tables_data.sql
 
