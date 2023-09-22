@@ -12,7 +12,7 @@ router.get('/sites', siteController.getAllSites);
 router.get('/sites/:id', siteController.getOneSite);
 
 // Back office
-router.get('/admin', mainController.adminPage);
+router.post('/admin/login', mainController.postLogin);
 // router.get('/admin/profile', mainController.getProfile)
 // router.patch('/admin/profile', mainController.editProfile)
 
@@ -21,6 +21,5 @@ router.post('/admin/sites', siteController.createNewSite);
 router.get('/admin/sites/:id', siteController.getOneSite);
 router.patch('/admin/sites/:id', siteController.editSite);
 router.delete('/admin/sites/:id', siteController.deleteSite);
-
 
 module.exports = router;
