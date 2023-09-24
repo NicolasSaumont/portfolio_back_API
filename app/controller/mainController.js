@@ -1,4 +1,6 @@
 const { User } = require('../models');
+const jwt = require('jsonwebtoken');
+const secretKey = 'princess consuela banana hammock';
 
 const mainController = {
   homepage(req, res) {
@@ -15,6 +17,27 @@ const mainController = {
       });
       if (user) {
         req.session.user = user.dataValues.email;
+        const reqSessionsUser = req.session.user;
+
+        const token = jwt.sign({ reqSessionsUser }, secretKey, {
+          expiresIn: '7d',
+        });
+
+        req.session.user = {
+          ...user,
+          token: token,
+        };
+
+        const newUser = req.session.user;
+
+        // Cookie creation
+        const cookie = res.cookie('adminCookie', newUser.token, {
+          maxAge: 60 * 60 * 1000, // Correspond à la durée de vie du cookie configurée dans express-session
+          httpOnly: true, // Assurez-vous que le cookie est sécurisé
+          // secure: true, // Décommentez ceci en production si vous utilisez HTTPS
+        });
+
+        console.log(cookie);
         const message = 'User is connected';
         return res.status(201).json(message);
       } else {
